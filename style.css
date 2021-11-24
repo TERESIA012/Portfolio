@@ -23,8 +23,8 @@
     --p-font: 0.941rem;
 }
 
-section{
-    padding:50px 10%;
+section {
+    padding: 50px 10%;
 }
 
 body {
@@ -45,24 +45,27 @@ header {
     z-index: 1000;
     display: flex;
     align-items: flex-start;
-    justify-content:space-between;
+    justify-content: space-between;
     background: var(--bg-color);
     padding: 18px 10%;
     transition: 0.2s;
 }
+
 header.shadow {
-    box-shadow:0 0 4px rgb(14 55 54 /15%);
+    box-shadow: 0 0 4px rgb(14 55 54 /15%);
 }
 
-.logo{
+.logo {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-color);
 }
-.navbar{
+
+.navbar {
     display: flex;
 }
-.navbar a{
+
+.navbar a {
     font-size: 1 rem;
     padding: 10px 20px;
     color: var(--text-color);
@@ -70,11 +73,12 @@ header.shadow {
 
 }
 
-.navbar a:hover{
-   color: var(--hover) ;
+.navbar a:hover {
+    color: var(--hover);
 
 }
-#menu-icon{
+
+#menu-icon {
     font-size: 24px;
     cursor: pointer;
     z-index: 10001;
@@ -82,9 +86,9 @@ header.shadow {
 
 }
 
-#darkmode{
-   font-size: 22px;
-   cursor: pointer;
+#darkmode {
+    font-size: 22px;
+    cursor: pointer;
 
 }
 
@@ -93,53 +97,58 @@ header.shadow {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns:0.2fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 1fr;
     align-items: center;
     gap: 1rem;
 }
 
-.home-img{
+.home-img {
     order: 3;
 }
 
-.home-img img{
+.home-img img {
     width: 100%;
 
 }
 
-.home-text span{
-   font-size: var(--medium-font) ; 
-   font-weight: 500;
+.home-text span {
+    font-size: var(--medium-font);
+    font-weight: 500;
 }
-.home-text  h1{
-  font-size: 3.2em;;  
+
+.home-text h1 {
+    font-size: 3.2em;
+    ;
 }
-.home-text h2{
-   font-size:1.1rem; 
-   font-weight: 400;
+
+.home-text h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
 }
+
 .home-text p {
-   font-size:var(--p-font) ; 
-   font-weight: 400;
-   margin: 0.7rem 0 1rem;
+    font-size: var(--p-font);
+    font-weight: 400;
+    margin: 0.7rem 0 1rem;
 }
-.social{
+
+.social {
     display: flex;
     flex-direction: column;
 }
 
-.social a{
+.social a {
     margin-bottom: 1rem;
     font-size: 22px;
     color: var(--text-color);
 
 }
 
-.social a:hover{
-  color: var(--hover);  
+.social a:hover {
+    color: var(--hover);
 }
 
-.btn{
+.btn {
     display: inline-block;
     background-color: var(--main-color);
     color: #fff;
@@ -147,50 +156,55 @@ header.shadow {
     border-radius: 0.5rem;
 
 }
-.btn:hover{
+
+.btn:hover {
     background-color: var(--hover);
 }
-.scroll-down{
-  position:absolute;
-  bottom:4rem;
-  left:18.5%;
+
+.scroll-down {
+    position: absolute;
+    bottom: 4rem;
+    left: 18.5%;
 
 
 }
+
 .scroll-down a {
-    display:flex;
+    display: flex;
     align-items: center;
     font-size: 1rem;
     color: var(--text-color);
 
 }
 
-.scroll-down .bx{
+.scroll-down .bx {
     color: var(--main-color);
     font-size: 24px;
 }
 
-.heading{
-   text-align: center; 
-}
-.heading h2{
-    font-size:var(--medium-font);
-
-}
-.heading span{
-   font-size:var(--p-font) ;
+.heading {
+    text-align: center;
 }
 
-.about-container{
+.heading h2 {
+    font-size: var(--medium-font);
+
+}
+
+.heading span {
+    font-size: var(--p-font);
+}
+
+.about-container {
     display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     margin-top: 2rem;
 }
 
-.about-img img{
-   width:80%;
-   border-radius:0.5rem;
+.about-img img {
+    width: 80%;
+    border-radius: 0.5rem;
 
 
 }
@@ -201,18 +215,90 @@ header.shadow {
     text-align: justify;
 }
 
-.information{
+.information {
     margin: 1rem 0 1.4rem;
 }
 
-.information .info-box .bx{
-    font-size:22px;
+.information .info-box .bx {
+    font-size: 22px;
 
 }
-.information .info-box span{
+
+.information .info-box span {
     font-weight: 400;
     margin-left: 1rem;
 }
 
 
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
 
+.skills-img img {
+    width: 80%;
+    padding-left: 4rem;
+    object-position: center;
+
+}
+
+.bars-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+
+}
+
+.bars-box h3,
+span {
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+
+.light-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: hsla(260, 100%, 44%, 0.4);
+    border-radius: 0.5rem;
+
+}
+
+.percent-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    background: var(--main-color);
+    border-radius: 0.5rem;
+    width: 100%;
+
+
+}
+
+.html-bar {
+    width: 94%;
+}
+
+.css-bar {
+    width: 85%;
+}
+
+.js-bar {
+    width: 75%;
+}
+.ang-bar{
+  width: 60%;  
+}
+.py-bar{
+    width: 65%;
+}
