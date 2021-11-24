@@ -369,7 +369,60 @@ span {
     display: block;
 
 }
-.portfolio-img img:hover{
-   transform: scale(1.1) ;
-   transition: 1s;
+
+.portfolio-img img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contact-form {
+    display: grid;
+    place-items: center;
+    margin: top 2rem;
+
+
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+
+form input,
+textarea {
+    padding: 12px;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: hsla(260, 78%, 27%, 0.1);
+    margin-bottom: 1rem;
+    color: var(--text-color)
+}
+
+form input::placeholder,
+textarea::placeholder {
+    color: var(--text-color);
+
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-button {
+    width: 80px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color:#fff;
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-button:hover{
+    background-color: var(--hover);
 }
