@@ -296,23 +296,25 @@ span {
 .js-bar {
     width: 75%;
 }
-.ang-bar{
-  width: 60%;  
+
+.ang-bar {
+    width: 60%;
 }
-.py-bar{
+
+.py-bar {
     width: 65%;
 }
 
-.services-content{
+.services-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
 
 }
 
-.services-box{
+.services-box {
     padding: 20px;
     width: 200px;
     display: flex;
@@ -327,23 +329,47 @@ span {
 
 }
 
-.services-box h3{
-   font-size: 1rem;
-   font-weight: 600;
-   margin: 0.7rem 0 0.4rem;
+.services-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.7rem 0 0.4rem;
 
 
 }
 
-.services-box .bx{
+.services-box .bx {
     padding-top: 2rem;
     font-size: 24px;
     color: var(--main-color);
 
 }
-.services-box a {
-   color: var(--main-color) ;
-   font-size:var(--p-font);
-   font-weight: 500;
 
+.services-box a {
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.portfolio-img {
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+}
+
+.portfolio-img img {
+    width: 100%;
+    display: block;
+
+}
+.portfolio-img img:hover{
+   transform: scale(1.1) ;
+   transition: 1s;
 }
